@@ -1,0 +1,39 @@
+{
+  "case_id": "H19",
+  "group": "hard",
+  "hard_class": "session_limits",
+  "runner": "contract",
+  "passed": false,
+  "required_checks": [
+    "contract_passed"
+  ],
+  "missing_checks": [],
+  "failed_checks": [
+    "contract_passed"
+  ],
+  "observed": {
+    "checks": {
+      "contract_passed": false
+    },
+    "details": {
+      "test": "tests.test_ui.StudioTests.test_upload_widget_and_helper_share_eight_mb_limit",
+      "tests_run": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "raw_test_output": "test_upload_widget_and_helper_share_eight_mb_limit (tests.test_ui.StudioTests.test_upload_widget_and_helper_share_eight_mb_limit) ... FAIL\n\n======================================================================\nFAIL: test_upload_widget_and_helper_share_eight_mb_limit (tests.test_ui.StudioTests.test_upload_widget_and_helper_share_eight_mb_limit)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"F:\\Personal_Project\\scriptscout\\tests\\test_ui.py\", line 381, in test_upload_widget_and_helper_share_eight_mb_limit\n    app = self.app()\n  File \"F:\\Personal_Project\\scriptscout\\tests\\test_ui.py\", line 165, in app\n    app = AppTest.from_file(str(APP_PATH), default_timeout=20).run()\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\streamlit\\testing\\v1\\app_test.py\", line 568, in run\n    return self._tree.run(timeout=timeout)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\streamlit\\testing\\v1\\element_tree.py\", line 2693, in run\n    return self._runner._run(widget_states, timeout=timeout)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\streamlit\\testing\\v1\\app_test.py\", line 488, in _run\n    script_runner = LocalScriptRunner(\n        self._script_path,\n    ...<4 lines>...\n        fragment_storage=self._fragment_storage,\n    )\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\streamlit\\testing\\v1\\local_script_runner.py\", line 62, in __init__\n    self._owned_event_loop = asyncio.new_event_loop()\n                             ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py\", line 840, in new_event_loop\n    return get_event_loop_policy().new_event_loop()\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py\", line 737, in new_event_loop\n    return self._loop_factory()\n           ~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_events.py\", line 316, in __init__\n    super().__init__(proactor)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py\", line 635, in __init__\n    self._make_self_pipe()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py\", line 781, in _make_self_pipe\n    self._ssock, self._csock = socket.socketpair()\n                               ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socket.py\", line 623, in _fallback_socketpair\n    csock.connect((addr, port))\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1169, in __call__\n    return self._mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1173, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1234, in _execute_mock_call\n    raise effect\nAssertionError: Contract evaluation must not access a real network\n\n----------------------------------------------------------------------\nRan 1 test in 0.388s\n\nFAILED (failures=1)\n",
+      "limitation": "Existing mocked regression test; measures software contracts, not model judgment or live provider quality",
+      "as_of_date": "2026-09-18",
+      "missing_expected_checks": [],
+      "execution_mode": "live",
+      "live_web_search": false,
+      "provider_request_definition": "Logical Gemini SDK generate_content calls; retry attempts configured to one"
+    },
+    "evidence_level": "mocked_contract",
+    "provider_call_count": 0,
+    "raw_calls": []
+  },
+  "started_at": "2026-09-18T08:00:15.911067+00:00",
+  "finished_at": "2026-09-18T08:00:16.299504+00:00",
+  "elapsed_seconds": 0.38843579999957
+}

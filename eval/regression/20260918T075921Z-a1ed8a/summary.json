@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-09-18T07:59:21.071418+00:00",
+  "finished_at": "2026-09-18T07:59:42.392457+00:00",
+  "tests_run": 213,
+  "failures": 96,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 117,
+  "successful": false,
+  "live_provider_calls": 0,
+  "network": "socket connections blocked during tests",
+  "scope": "Existing offline regression suite, reported separately from golden 34",
+  "freeze_sha256": "1dbbc3a3d7353df3e10cd25a3de503e3449b8d4656b8c1a68f382d5e104f8f39",
+  "log_sha256": "78e8d21c54c66d5ef0b81094ef8d755fa248458b0cff921925c8a9724967ad62"
+}

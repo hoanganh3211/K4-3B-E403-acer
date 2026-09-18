@@ -1,0 +1,4 @@
+# Optional experimental vector store; not needed by the research/writing API.
+-r requirements.txt
+qdrant-client>=1.10,<2
+sentence-transformers>=3,<6

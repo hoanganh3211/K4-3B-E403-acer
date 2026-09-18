@@ -1,0 +1,8 @@
+cd F:\Personal_Project\scriptscout
+.\venv\Scripts\activate
+1.
+docker run -d -p 6333:6333 -p 6334:6334 --name scriptscout-qdrant qdrant/qdrant:latest
+2.
+python api_server.py
+4.
+streamlit run app_ui.py

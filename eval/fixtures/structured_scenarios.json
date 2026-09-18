@@ -1,0 +1,39 @@
+{
+  "fixture_notice": "Synthetic, manually checked evidence and seed scripts. Used to isolate cross-checking, writing and selective revision from search and source evaluation. No claim of real research findings.",
+  "as_of_date": "2026-09-18",
+  "scenarios": {
+    "completion_conflict": {
+      "kind": "conflict",
+      "topic": "Đối chiếu tỷ lệ hoàn thành của cùng một nhóm học viên",
+      "sources": [
+        {"source_id": "src_a", "title": "Controlled report A", "url": "https://fixture-a.example.edu/report", "language": "en", "quote": "In the 2025 River College pilot, 70% of the same 100 enrolled learners completed the optional module by 30 June 2025.", "claim_vi": "Trong thí điểm năm 2025 tại River College, 70% trong cùng nhóm 100 học viên hoàn thành học phần trước ngày 30/6/2025.", "statistical": true},
+        {"source_id": "src_b", "title": "Controlled report B", "url": "https://fixture-b.example.edu/report", "language": "en", "quote": "In the 2025 River College pilot, 40% of the same 100 enrolled learners completed the optional module by 30 June 2025.", "claim_vi": "Trong thí điểm năm 2025 tại River College, 40% trong cùng nhóm 100 học viên hoàn thành học phần trước ngày 30/6/2025.", "statistical": true}
+      ],
+      "expected_source_pair": ["src_a", "src_b"]
+    },
+    "different_cohorts": {
+      "kind": "conflict",
+      "topic": "Phân biệt khác biệt phạm vi với mâu thuẫn số liệu",
+      "sources": [
+        {"source_id": "src_a", "title": "Controlled 2024 pilot", "url": "https://fixture-a.example.edu/cohort", "language": "en", "quote": "In 2024, 70% of 40 volunteer first-year learners at River College completed the optional module.", "claim_vi": "Năm 2024, 70% trong 40 học viên năm nhất tự nguyện tại River College hoàn thành học phần tùy chọn.", "statistical": true},
+        {"source_id": "src_b", "title": "Controlled 2025 pilot", "url": "https://fixture-b.example.edu/cohort", "language": "en", "quote": "In 2025, 40% of 200 final-year learners at Mountain College completed a different optional module.", "claim_vi": "Năm 2025, 40% trong 200 học viên năm cuối tại Mountain College hoàn thành một học phần tùy chọn khác.", "statistical": true}
+      ],
+      "expected_source_pair": ["src_a", "src_b"]
+    },
+    "attention_patch": {
+      "kind": "script",
+      "topic": "Giải thích self-attention bằng tiếng Việt",
+      "lesson": {"topic": "Giải thích self-attention bằng tiếng Việt", "target_audience": "Sinh viên mới học học sâu", "objectives": ["Giải thích quan hệ giữa các vị trí trong một chuỗi"], "duration_minutes": 1, "teaching_style": "Xưng thầy và các em; giải thích gần gũi, đặt một câu hỏi gợi mở.", "source_languages": ["en", "fr"], "max_sources": 3},
+      "sources": [
+        {"source_id": "src_a", "title": "Controlled attention note A", "url": "https://fixture-a.example.edu/attention", "language": "en", "quote": "Self-attention relates different positions of a single sequence to compute a representation of the sequence.", "claim_vi": "Self-attention liên kết các vị trí trong cùng một chuỗi để tạo biểu diễn của chuỗi đó.", "statistical": false},
+        {"source_id": "src_b", "title": "Controlled attention note B", "url": "https://fixture-b.example.edu/attention", "language": "fr", "quote": "Le mécanisme d'attention relie différentes positions d'une même séquence pour construire sa représentation.", "claim_vi": "Cơ chế chú ý liên kết các vị trí khác nhau trong cùng một chuỗi để xây dựng biểu diễn của chuỗi.", "statistical": false}
+      ],
+      "seed_lines": [
+        {"line_id": "line_intro", "text": "Thầy mời các em cùng tìm hiểu một ý tưởng nhé.", "kind": "transition", "source_ids": []},
+        {"line_id": "line_a", "text": "Theo tài liệu A, self-attention liên kết các vị trí trong cùng một chuỗi để tạo biểu diễn của chuỗi đó.", "kind": "factual", "source_ids": ["src_a"]},
+        {"line_id": "line_b", "text": "Theo tài liệu B, cơ chế chú ý liên kết các vị trí khác nhau trong cùng một chuỗi để xây dựng biểu diễn của chuỗi.", "kind": "factual", "source_ids": ["src_b"]},
+        {"line_id": "line_question", "text": "Các em muốn thử diễn đạt lại ý này bằng lời của mình không?", "kind": "question", "source_ids": []}
+      ]
+    }
+  }
+}

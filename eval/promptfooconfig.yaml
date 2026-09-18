@@ -1,0 +1,16 @@
+description: ScriptScout Golden 34 v1 - registered mixed evaluation
+prompts:
+  - '{{case_id}}'
+providers:
+  - id: file://provider.py
+    label: scriptscout-production-gemini
+tests: file://cases.promptfoo.json
+defaultTest:
+  assert:
+    - type: javascript
+      value: JSON.parse(output).passed === true
+evaluateOptions:
+  maxConcurrency: 1
+  cache: false
+  repeat: 1
+sharing: false

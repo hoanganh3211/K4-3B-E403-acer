@@ -1,0 +1,206 @@
+[
+  {
+    "description": "O01 | admission",
+    "vars": {
+      "case_id": "O01"
+    }
+  },
+  {
+    "description": "O02 | admission",
+    "vars": {
+      "case_id": "O02"
+    }
+  },
+  {
+    "description": "O03 | admission",
+    "vars": {
+      "case_id": "O03"
+    }
+  },
+  {
+    "description": "O04 | admission",
+    "vars": {
+      "case_id": "O04"
+    }
+  },
+  {
+    "description": "O05 | source",
+    "vars": {
+      "case_id": "O05"
+    }
+  },
+  {
+    "description": "O06 | source",
+    "vars": {
+      "case_id": "O06"
+    }
+  },
+  {
+    "description": "O07 | source",
+    "vars": {
+      "case_id": "O07"
+    }
+  },
+  {
+    "description": "O08 | source",
+    "vars": {
+      "case_id": "O08"
+    }
+  },
+  {
+    "description": "O09 | teaching_style",
+    "vars": {
+      "case_id": "O09"
+    }
+  },
+  {
+    "description": "O10 | contract",
+    "vars": {
+      "case_id": "O10"
+    }
+  },
+  {
+    "description": "H01 | source",
+    "vars": {
+      "case_id": "H01"
+    }
+  },
+  {
+    "description": "H02 | source",
+    "vars": {
+      "case_id": "H02"
+    }
+  },
+  {
+    "description": "H03 | conflict",
+    "vars": {
+      "case_id": "H03"
+    }
+  },
+  {
+    "description": "H04 | conflict",
+    "vars": {
+      "case_id": "H04"
+    }
+  },
+  {
+    "description": "H05 | source",
+    "vars": {
+      "case_id": "H05"
+    }
+  },
+  {
+    "description": "H06 | source",
+    "vars": {
+      "case_id": "H06"
+    }
+  },
+  {
+    "description": "H07 | source",
+    "vars": {
+      "case_id": "H07"
+    }
+  },
+  {
+    "description": "H08 | source",
+    "vars": {
+      "case_id": "H08"
+    }
+  },
+  {
+    "description": "H09 | source",
+    "vars": {
+      "case_id": "H09"
+    }
+  },
+  {
+    "description": "H10 | source",
+    "vars": {
+      "case_id": "H10"
+    }
+  },
+  {
+    "description": "H11 | source",
+    "vars": {
+      "case_id": "H11"
+    }
+  },
+  {
+    "description": "H12 | source",
+    "vars": {
+      "case_id": "H12"
+    }
+  },
+  {
+    "description": "H13 | patch",
+    "vars": {
+      "case_id": "H13"
+    }
+  },
+  {
+    "description": "H14 | patch",
+    "vars": {
+      "case_id": "H14"
+    }
+  },
+  {
+    "description": "H15 | teaching_style",
+    "vars": {
+      "case_id": "H15"
+    }
+  },
+  {
+    "description": "H16 | teaching_style",
+    "vars": {
+      "case_id": "H16"
+    }
+  },
+  {
+    "description": "H17 | admission",
+    "vars": {
+      "case_id": "H17"
+    }
+  },
+  {
+    "description": "H18 | admission",
+    "vars": {
+      "case_id": "H18"
+    }
+  },
+  {
+    "description": "H19 | contract",
+    "vars": {
+      "case_id": "H19"
+    }
+  },
+  {
+    "description": "H20 | contract",
+    "vars": {
+      "case_id": "H20"
+    }
+  },
+  {
+    "description": "R01 | contract",
+    "vars": {
+      "case_id": "R01"
+    }
+  },
+  {
+    "description": "R02 | patch",
+    "vars": {
+      "case_id": "R02"
+    }
+  },
+  {
+    "description": "R03 | contract",
+    "vars": {
+      "case_id": "R03"
+    }
+  },
+  {
+    "description": "R04 | contract",
+    "vars": {
+      "case_id": "R04"
+    }
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "case_id": "H10",
+  "group": "hard",
+  "hard_class": "broken_or_login_links",
+  "runner": "source",
+  "passed": true,
+  "required_checks": [
+    "inaccessible",
+    "no_claims",
+    "no_model_call",
+    "no_snippet_evidence"
+  ],
+  "missing_checks": [],
+  "failed_checks": [],
+  "observed": {
+    "checks": {
+      "inaccessible": true,
+      "no_claims": true,
+      "no_model_call": true,
+      "no_snippet_evidence": true
+    },
+    "details": {
+      "fixture": "login_wall",
+      "raw_source": {
+        "source_id": "src_login_wall",
+        "url": "https://fixture-journal.example.edu/login-only",
+        "title": "Controlled login wall",
+        "raw_markdown": "",
+        "http_status": 200,
+        "error_message": "Không xác nhận được toàn văn vì trang yêu cầu quyền truy cập hoặc kiểm tra trình duyệt.",
+        "error": "Không xác nhận được toàn văn vì trang yêu cầu quyền truy cập hoặc kiểm tra trình duyệt.",
+        "language": "en",
+        "author": "Không rõ",
+        "published_date": null,
+        "fetched_at": "2026-09-18T00:00:00Z",
+        "content_hash": "",
+        "final_url": "https://fixture-journal.example.edu/login-only",
+        "content_type": "text/html",
+        "original_url": "https://fixture-journal.example.edu/login-only",
+        "retrieval_method": "direct",
+        "retrieval_note": "",
+        "retrieval_details": [],
+        "document_doi": "",
+        "document_pmcid": "",
+        "warnings": [
+          "Trang có dấu hiệu tường phí, đăng nhập hoặc chặn truy cập; không coi là toàn văn."
+        ],
+        "has_prompt_injection": false,
+        "injection_details": null
+      },
+      "source": {
+        "source_id": "src_login_wall",
+        "url": "https://fixture-journal.example.edu/login-only",
+        "title": "Controlled login wall",
+        "author": "Không rõ",
+        "published_date": null,
+        "language": "en",
+        "status": "unreachable",
+        "trust_score": 0.0,
+        "trust_breakdown": {
+          "domain_authority": 0.0,
+          "recency": 0.0,
+          "evidence_quality": 0.0,
+          "author_credibility": 0.0
+        },
+        "trust_reasoning": "Chưa đọc được nội dung bài. Tài liệu này chưa được dùng để viết kịch bản.",
+        "claims": [],
+        "has_prompt_injection": false,
+        "injection_details": null,
+        "is_outdated": false,
+        "summary_vi": "",
+        "warnings": [
+          "Trang có dấu hiệu tường phí, đăng nhập hoặc chặn truy cập; không coi là toàn văn.",
+          "Chưa đọc được nội dung bài. Tài liệu này chưa được dùng để viết kịch bản."
+        ],
+        "is_accessible": false,
+        "error_message": "Không xác nhận được toàn văn vì trang yêu cầu quyền truy cập hoặc kiểm tra trình duyệt.",
+        "error": null,
+        "fetched_at": "2026-09-18T00:00:00Z",
+        "content_hash": "",
+        "final_url": "https://fixture-journal.example.edu/login-only",
+        "content_type": "",
+        "original_url": "https://fixture-journal.example.edu/login-only",
+        "retrieval_method": "direct",
+        "retrieval_note": "",
+        "retrieval_details": [],
+        "document_doi": "",
+        "document_pmcid": "",
+        "document_kind": "web",
+        "uploaded_filename": ""
+      },
+      "retrieval_requests": [
+        "https://fixture-journal.example.edu/login-only"
+      ],
+      "lesson": {
+        "topic": "Đối chiếu bằng chứng về phương pháp dạy học",
+        "target_audience": "Giảng viên và sinh viên kiểm tra phần mềm",
+        "objectives": [
+          "Không coi trang đăng nhập hoặc mô tả tìm kiếm là toàn văn"
+        ],
+        "duration_minutes": 1,
+        "teaching_style": "Giải thích rõ ràng bằng tiếng Việt, giữ nguyên phạm vi bằng chứng.",
+        "source_languages": [
+          "en"
+        ],
+        "max_sources": 3
+      },
+      "language_check": "Vietnamese character/word presence only; not a fluency judgment",
+      "fact_check": "Predeclared regex coverage proxy; not an independent semantic judgment",
+      "as_of_date": "2026-09-18",
+      "missing_expected_checks": [],
+      "execution_mode": "live",
+      "live_web_search": false,
+      "provider_request_definition": "Logical Gemini SDK generate_content calls; retry attempts configured to one"
+    },
+    "evidence_level": "production_guard_controlled_retrieval",
+    "provider_call_count": 0,
+    "raw_calls": []
+  },
+  "started_at": "2026-09-18T08:00:06.650497+00:00",
+  "finished_at": "2026-09-18T08:00:06.653244+00:00",
+  "elapsed_seconds": 0.002741999996942468
+}

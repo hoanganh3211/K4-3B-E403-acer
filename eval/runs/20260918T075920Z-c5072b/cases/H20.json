@@ -1,0 +1,37 @@
+{
+  "case_id": "H20",
+  "group": "hard",
+  "hard_class": "session_limits",
+  "runner": "contract",
+  "passed": true,
+  "required_checks": [
+    "contract_passed"
+  ],
+  "missing_checks": [],
+  "failed_checks": [],
+  "observed": {
+    "checks": {
+      "contract_passed": true
+    },
+    "details": {
+      "test": "tests.test_source_scale.SourceSearchScaleTests.test_fifty_distinct_sources_are_reachable_in_one_language",
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "raw_test_output": "test_fifty_distinct_sources_are_reachable_in_one_language (tests.test_source_scale.SourceSearchScaleTests.test_fifty_distinct_sources_are_reachable_in_one_language) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nOK\n",
+      "limitation": "Existing mocked regression test; measures software contracts, not model judgment or live provider quality",
+      "as_of_date": "2026-09-18",
+      "missing_expected_checks": [],
+      "execution_mode": "live",
+      "live_web_search": false,
+      "provider_request_definition": "Logical Gemini SDK generate_content calls; retry attempts configured to one"
+    },
+    "evidence_level": "mocked_contract",
+    "provider_call_count": 0,
+    "raw_calls": []
+  },
+  "started_at": "2026-09-18T08:00:16.385177+00:00",
+  "finished_at": "2026-09-18T08:00:16.394554+00:00",
+  "elapsed_seconds": 0.009380400006193668
+}

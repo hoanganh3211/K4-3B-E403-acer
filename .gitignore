@@ -1,5 +1,9 @@
-.DS_Store
-__pycache__/
 .env
-node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
 data/
+*.log
+.pytest_cache/
+artifacts/

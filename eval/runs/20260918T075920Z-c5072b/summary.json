@@ -1,0 +1,217 @@
+{
+  "total": 34,
+  "passed": 20,
+  "failed": 14,
+  "pass_percentage": 58.8235294117647,
+  "quality_bar_met": false,
+  "status": "Hold",
+  "complete": true,
+  "integrity_ok": true,
+  "hard_violations": [
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H11",
+      "check": "quotes_grounded"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H12",
+      "check": "quotes_grounded"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H15",
+      "check": "grounded_factual_lines"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H15",
+      "check": "only_approved_refs"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H16",
+      "check": "grounded_factual_lines"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H16",
+      "check": "only_approved_refs"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H13",
+      "check": "replacements_grounded"
+    },
+    {
+      "condition": "HC-EVIDENCE",
+      "case_id": "H14",
+      "check": "replacements_grounded"
+    },
+    {
+      "condition": "HC-PATCH",
+      "case_id": "H13",
+      "check": "untouched_identical"
+    },
+    {
+      "condition": "HC-PATCH",
+      "case_id": "H13",
+      "check": "line_ids_preserved"
+    },
+    {
+      "condition": "HC-PATCH",
+      "case_id": "H13",
+      "check": "removed_refs_absent"
+    },
+    {
+      "condition": "HC-PATCH",
+      "case_id": "H13",
+      "check": "script_input_unchanged"
+    },
+    {
+      "condition": "HC-INTEGRITY",
+      "complete": true,
+      "error_cases": [
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "R02"
+      ],
+      "missing_checks": {},
+      "integrity_ok": true
+    }
+  ],
+  "errors": [
+    "H11",
+    "H12",
+    "H13",
+    "H14",
+    "H15",
+    "H16",
+    "H17",
+    "R02"
+  ],
+  "groups": {
+    "ordinary": {
+      "passed": 8,
+      "total": 10,
+      "percentage": 80.0
+    },
+    "hard": {
+      "passed": 11,
+      "total": 20,
+      "percentage": 55.0
+    },
+    "rare": {
+      "passed": 1,
+      "total": 4,
+      "percentage": 25.0
+    }
+  },
+  "evidence_levels": {
+    "production_guard_controlled_retrieval": 4,
+    "live_model_preverified_fixture": 5,
+    "live_model_controlled_retrieval": 10,
+    "evaluation_error": 3,
+    "live_model": 5,
+    "local_guard": 1,
+    "mocked_contract": 6
+  },
+  "provider_calls": 25,
+  "ship_evidence_complete": false,
+  "promptfoo_stats": {
+    "successes": 20,
+    "failures": 14,
+    "errors": 0,
+    "tokenUsage": {
+      "prompt": 0,
+      "completion": 0,
+      "cached": 0,
+      "total": 0,
+      "numRequests": 34,
+      "completionDetails": {
+        "reasoning": 0,
+        "acceptedPrediction": 0,
+        "rejectedPrediction": 0,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0
+      },
+      "assertions": {
+        "total": 0,
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "numRequests": 0,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        }
+      }
+    },
+    "durationMs": 54150,
+    "evaluationDurationMs": 54150
+  },
+  "framework_accounting_matches": true,
+  "run_id": "20260918T075920Z-c5072b",
+  "finished_at": "2026-09-18T08:00:18.958635+00:00",
+  "freeze_sha256": "1dbbc3a3d7353df3e10cd25a3de503e3449b8d4656b8c1a68f382d5e104f8f39",
+  "configuration": {
+    "run_id": "20260918T075920Z-c5072b",
+    "started_at": "2026-09-18T07:59:20.952735+00:00",
+    "versions": {
+      "python": "3.13.15",
+      "promptfoo": "0.123.1",
+      "google-genai": "2.24.0",
+      "pydantic": "2.13.5",
+      "httpx": "0.28.1",
+      "streamlit": "1.64.0"
+    },
+    "provider": "google",
+    "model": "gemini-3.5-flash-lite",
+    "moderation_model": "gemini-3.5-flash-lite",
+    "freeze_sha256": "1dbbc3a3d7353df3e10cd25a3de503e3449b8d4656b8c1a68f382d5e104f8f39",
+    "spec_frozen_at": "2026-09-18T07:59:09.328429+00:00",
+    "command": [
+      "C:\\Program Files\\nodejs\\npx.cmd",
+      "--yes",
+      "promptfoo@0.123.1",
+      "eval",
+      "-c",
+      "F:\\Personal_Project\\scriptscout\\eval\\promptfooconfig.yaml",
+      "--no-cache",
+      "--max-concurrency",
+      "1",
+      "--repeat",
+      "1",
+      "--no-progress-bar",
+      "--no-table",
+      "--no-write",
+      "--no-share",
+      "-o",
+      "F:\\Personal_Project\\scriptscout\\eval\\runs\\20260918T075920Z-c5072b\\promptfoo.json"
+    ],
+    "cache": false,
+    "repeats": 1,
+    "concurrency": 1,
+    "dataset_order": "registered order",
+    "live_search": false,
+    "raw_scope": "Application-boundary requests, parsed responses, usage when exposed, sanitized errors; not raw HTTP.",
+    "case_retries": 0,
+    "sdk_attempts": 1,
+    "limits": {
+      "moderation_output_tokens": 768,
+      "moderation_timeout_seconds": 20,
+      "script_output_tokens": 8192,
+      "other_output_tokens": 4096,
+      "research_timeout_seconds": 60
+    },
+    "temperature": "Production adapter defaults; moderation temperature=0. No deterministic-output claim."
+  }
+}

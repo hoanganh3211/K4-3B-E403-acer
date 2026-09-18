@@ -1,0 +1,14 @@
+[server]
+maxUploadSize = 8
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F8F5EE"
+secondaryBackgroundColor = "#EEF2E9"
+textColor = "#173342"
+font = "sans serif"

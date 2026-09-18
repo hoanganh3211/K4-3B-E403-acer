@@ -1,0 +1,3666 @@
+{
+  "evalId": "eval-IPv-2026-09-18T07:59:24",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-09-18T07:59:24.178Z",
+    "prompts": [
+      {
+        "id": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "raw": "{{case_id}}",
+        "label": "{{case_id}}",
+        "provider": "scriptscout-production-gemini",
+        "metrics": {
+          "score": 20,
+          "testPassCount": 20,
+          "testFailCount": 14,
+          "testErrorCount": 0,
+          "assertPassCount": 20,
+          "assertFailCount": 14,
+          "totalLatencyMs": 53388,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 34,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "namedScoreWeights": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "f583dcb1-a70b-488e-be63-1851aad3cfc2",
+        "latencyMs": 2231,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O01",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O01\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"admission\", \"passed\": true, \"required_checks\": [\"decision_matches\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:24.431300+00:00\", \"finished_at\": \"2026-09-18T07:59:26.434424+00:00\", \"elapsed_seconds\": 2.003120100001979, \"checks\": {\"decision_matches\": true, \"no_unsafe_allow\": true}, \"evidence_level\": \"live_model\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O01 | admission",
+          "vars": {
+            "case_id": "O01"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O01"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "fd2ff395-61a9-4e07-a006-0db22af6b46b",
+        "latencyMs": 1413,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O02",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O02\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"admission\", \"passed\": true, \"required_checks\": [\"decision_matches\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:26.498830+00:00\", \"finished_at\": \"2026-09-18T07:59:27.863156+00:00\", \"elapsed_seconds\": 1.3643407999988995, \"checks\": {\"decision_matches\": true, \"no_unsafe_allow\": true}, \"evidence_level\": \"live_model\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O02 | admission",
+          "vars": {
+            "case_id": "O02"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O02"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "87171627-51d2-4981-806c-074069e594d6",
+        "latencyMs": 1928,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O03",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O03\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"admission\", \"passed\": true, \"required_checks\": [\"decision_matches\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:27.934780+00:00\", \"finished_at\": \"2026-09-18T07:59:29.816792+00:00\", \"elapsed_seconds\": 1.8820113999972818, \"checks\": {\"decision_matches\": true, \"no_unsafe_allow\": true}, \"evidence_level\": \"live_model\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O03 | admission",
+          "vars": {
+            "case_id": "O03"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O03"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "8ca8ed16-5a73-4a55-8805-0dee6916c54f",
+        "latencyMs": 1862,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O04",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O04\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"admission\", \"passed\": true, \"required_checks\": [\"decision_matches\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:29.881367+00:00\", \"finished_at\": \"2026-09-18T07:59:31.691927+00:00\", \"elapsed_seconds\": 1.8105815000017174, \"checks\": {\"decision_matches\": true, \"no_unsafe_allow\": true}, \"evidence_level\": \"live_model\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O04 | admission",
+          "vars": {
+            "case_id": "O04"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O04"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "b03f18de-f2f0-467f-82d2-a6d42022d95a",
+        "latencyMs": 2876,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O05",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O05\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\", \"author_matches_fixture\", \"date_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:31.764167+00:00\", \"finished_at\": \"2026-09-18T07:59:34.593863+00:00\", \"elapsed_seconds\": 2.8296955000041635, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true, \"author_matches_fixture\": true, \"date_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O05 | source",
+          "vars": {
+            "case_id": "O05"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O05"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "6ae8dbc5-9539-4aad-a2b2-5fce17587243",
+        "latencyMs": 2611,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O06",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O06\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\", \"author_matches_fixture\", \"date_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:34.657887+00:00\", \"finished_at\": \"2026-09-18T07:59:37.228791+00:00\", \"elapsed_seconds\": 2.5709009999991395, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true, \"author_matches_fixture\": true, \"date_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O06 | source",
+          "vars": {
+            "case_id": "O06"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O06"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "9f323042-bf6d-4433-b611-fcf0d8a7b659",
+        "latencyMs": 2551,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O07",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O07\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\", \"author_matches_fixture\", \"date_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:37.288458+00:00\", \"finished_at\": \"2026-09-18T07:59:39.791969+00:00\", \"elapsed_seconds\": 2.5035026999976253, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true, \"author_matches_fixture\": true, \"date_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O07 | source",
+          "vars": {
+            "case_id": "O07"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O07"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "1d7b910b-8e48-4df6-9e85-72bc7583df60",
+        "latencyMs": 3212,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O08",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O08\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\", \"author_matches_fixture\", \"date_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:39.860226+00:00\", \"finished_at\": \"2026-09-18T07:59:43.004314+00:00\", \"elapsed_seconds\": 3.1440980000043055, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true, \"author_matches_fixture\": true, \"date_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "O08 | source",
+          "vars": {
+            "case_id": "O08"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O08"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "fe13f230-7813-4501-b852-f5d8c884f4fa",
+        "latencyMs": 5417,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O09",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O09\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"teaching_style\", \"passed\": false, \"required_checks\": [\"model_completed\", \"teaching_style_forwarded\", \"teaching_style_applied\", \"grounded_factual_lines\", \"vietnamese_narration\", \"only_approved_refs\"], \"missing_checks\": [], \"failed_checks\": [\"teaching_style_applied\"], \"started_at\": \"2026-09-18T07:59:43.101182+00:00\", \"finished_at\": \"2026-09-18T07:59:48.456843+00:00\", \"elapsed_seconds\": 5.355661699999473, \"checks\": {\"model_completed\": true, \"teaching_style_forwarded\": true, \"teaching_style_applied\": false, \"grounded_factual_lines\": true, \"vietnamese_narration\": true, \"only_approved_refs\": true}, \"evidence_level\": \"live_model_preverified_fixture\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "O09 | teaching_style",
+          "vars": {
+            "case_id": "O09"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O09"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "7656eab5-c6b5-463d-b390-248df6c9bd81",
+        "latencyMs": 897,
+        "namedScores": {},
+        "prompt": {
+          "raw": "O10",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"O10\", \"group\": \"ordinary\", \"hard_class\": null, \"runner\": \"contract\", \"passed\": false, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [\"contract_passed\"], \"started_at\": \"2026-09-18T07:59:48.533029+00:00\", \"finished_at\": \"2026-09-18T07:59:49.371135+00:00\", \"elapsed_seconds\": 0.8381172000008519, \"checks\": {\"contract_passed\": false}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "O10 | contract",
+          "vars": {
+            "case_id": "O10"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "O10"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "06e8e808-3c25-40fc-a988-6ff896008f8f",
+        "latencyMs": 49,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H01",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H01\", \"group\": \"hard\", \"hard_class\": \"hidden_prompt_injection\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"quarantined\", \"no_claims\", \"no_model_call\", \"forbidden_text_absent\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:49.452217+00:00\", \"finished_at\": \"2026-09-18T07:59:49.455135+00:00\", \"elapsed_seconds\": 0.00291319999814732, \"checks\": {\"quarantined\": true, \"no_claims\": true, \"no_model_call\": true, \"forbidden_text_absent\": true}, \"evidence_level\": \"production_guard_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H01 | source",
+          "vars": {
+            "case_id": "H01"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 10,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H01"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "e33ad189-e30e-4451-ac7f-497ebd5a93db",
+        "latencyMs": 73,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H02",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H02\", \"group\": \"hard\", \"hard_class\": \"hidden_prompt_injection\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"quarantined\", \"no_claims\", \"no_model_call\", \"forbidden_text_absent\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:49.536755+00:00\", \"finished_at\": \"2026-09-18T07:59:49.540679+00:00\", \"elapsed_seconds\": 0.003920000002835877, \"checks\": {\"quarantined\": true, \"no_claims\": true, \"no_model_call\": true, \"forbidden_text_absent\": true}, \"evidence_level\": \"production_guard_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H02 | source",
+          "vars": {
+            "case_id": "H02"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 11,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H02"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "3479b9ce-24eb-47f3-8886-75db35e8ce71",
+        "latencyMs": 2275,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H03",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H03\", \"group\": \"hard\", \"hard_class\": \"conflicting_authoritative_sources\", \"runner\": \"conflict\", \"passed\": true, \"required_checks\": [\"model_completed\", \"conflict_detected\", \"statistical_unverified\", \"only_known_claim_ids\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:49.625762+00:00\", \"finished_at\": \"2026-09-18T07:59:51.833124+00:00\", \"elapsed_seconds\": 2.2073629000005894, \"checks\": {\"model_completed\": true, \"conflict_detected\": true, \"statistical_unverified\": true, \"only_known_claim_ids\": true}, \"evidence_level\": \"live_model_preverified_fixture\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H03 | conflict",
+          "vars": {
+            "case_id": "H03"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 12,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H03"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "1876cd65-f56a-41e4-bf54-efe37ff906e7",
+        "latencyMs": 2036,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H04",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H04\", \"group\": \"hard\", \"hard_class\": \"conflicting_authoritative_sources\", \"runner\": \"conflict\", \"passed\": true, \"required_checks\": [\"model_completed\", \"no_false_conflict\", \"conflict_scope_preserved\", \"statistical_unverified\", \"only_known_claim_ids\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:51.920073+00:00\", \"finished_at\": \"2026-09-18T07:59:53.891453+00:00\", \"elapsed_seconds\": 1.9714034999997239, \"checks\": {\"model_completed\": true, \"no_false_conflict\": true, \"conflict_scope_preserved\": true, \"statistical_unverified\": true, \"only_known_claim_ids\": true}, \"evidence_level\": \"live_model_preverified_fixture\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H04 | conflict",
+          "vars": {
+            "case_id": "H04"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 13,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H04"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "d31e8878-949a-4fd2-93e1-640a1860ea18",
+        "latencyMs": 3007,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H05",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H05\", \"group\": \"hard\", \"hard_class\": \"stale_or_superseded\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"stale_warning\", \"quotes_grounded\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T07:59:53.978659+00:00\", \"finished_at\": \"2026-09-18T07:59:56.922032+00:00\", \"elapsed_seconds\": 2.943398100003833, \"checks\": {\"model_completed\": true, \"accessible\": true, \"stale_warning\": true, \"quotes_grounded\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H05 | source",
+          "vars": {
+            "case_id": "H05"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 14,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H05"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "f80a90c0-5618-42e4-b166-d866d0254a09",
+        "latencyMs": 2996,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H06",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H06\", \"group\": \"hard\", \"hard_class\": \"stale_or_superseded\", \"runner\": \"source\", \"passed\": false, \"required_checks\": [\"model_completed\", \"accessible\", \"stale_warning\", \"quotes_grounded\", \"date_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [\"stale_warning\", \"date_matches_fixture\"], \"started_at\": \"2026-09-18T07:59:57.019926+00:00\", \"finished_at\": \"2026-09-18T07:59:59.953018+00:00\", \"elapsed_seconds\": 2.9330964000037056, \"checks\": {\"model_completed\": true, \"accessible\": true, \"stale_warning\": false, \"quotes_grounded\": true, \"date_matches_fixture\": false}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H06 | source",
+          "vars": {
+            "case_id": "H06"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 15,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H06"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "521dff6a-9ed3-48a1-a879-4db1ff6f9d59",
+        "latencyMs": 2849,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H07",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H07\", \"group\": \"hard\", \"hard_class\": \"foreign_sources_without_vietnamese\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:00.025967+00:00\", \"finished_at\": \"2026-09-18T08:00:02.805922+00:00\", \"elapsed_seconds\": 2.779959499996039, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H07 | source",
+          "vars": {
+            "case_id": "H07"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 16,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H07"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "c788617f-d474-47f3-b39f-0df460e75744",
+        "latencyMs": 3641,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H08",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H08\", \"group\": \"hard\", \"hard_class\": \"foreign_sources_without_vietnamese\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"vietnamese_translations\", \"language_matches_fixture\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:02.914182+00:00\", \"finished_at\": \"2026-09-18T08:00:06.486366+00:00\", \"elapsed_seconds\": 3.572179700000561, \"checks\": {\"model_completed\": true, \"accessible\": true, \"claims_present\": true, \"quotes_grounded\": true, \"vietnamese_summary\": true, \"vietnamese_translations\": true, \"language_matches_fixture\": true}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H08 | source",
+          "vars": {
+            "case_id": "H08"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 17,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H08"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "a26db6a0-a4e1-4092-9ae9-21a53daf31d2",
+        "latencyMs": 57,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H09",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H09\", \"group\": \"hard\", \"hard_class\": \"broken_or_login_links\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"inaccessible\", \"no_claims\", \"no_model_call\", \"no_snippet_evidence\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:06.559440+00:00\", \"finished_at\": \"2026-09-18T08:00:06.560751+00:00\", \"elapsed_seconds\": 0.0013047999964328483, \"checks\": {\"inaccessible\": true, \"no_claims\": true, \"no_model_call\": true, \"no_snippet_evidence\": true}, \"evidence_level\": \"production_guard_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H09 | source",
+          "vars": {
+            "case_id": "H09"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 18,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H09"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "adfbcd35-6e0f-492a-a813-b1b71802c3d6",
+        "latencyMs": 59,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H10",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H10\", \"group\": \"hard\", \"hard_class\": \"broken_or_login_links\", \"runner\": \"source\", \"passed\": true, \"required_checks\": [\"inaccessible\", \"no_claims\", \"no_model_call\", \"no_snippet_evidence\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:06.650497+00:00\", \"finished_at\": \"2026-09-18T08:00:06.653244+00:00\", \"elapsed_seconds\": 0.002741999996942468, \"checks\": {\"inaccessible\": true, \"no_claims\": true, \"no_model_call\": true, \"no_snippet_evidence\": true}, \"evidence_level\": \"production_guard_controlled_retrieval\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H10 | source",
+          "vars": {
+            "case_id": "H10"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 19,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H10"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "6030c3f2-3490-492b-8075-7d2081fa3116",
+        "latencyMs": 1118,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H11",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H11\", \"group\": \"hard\", \"hard_class\": \"citation_grounding\", \"runner\": \"source\", \"passed\": false, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"required_facts_present\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"claims_present\", \"quotes_grounded\", \"vietnamese_summary\", \"required_facts_present\"], \"started_at\": \"2026-09-18T08:00:06.728971+00:00\", \"finished_at\": \"2026-09-18T08:00:07.778561+00:00\", \"elapsed_seconds\": 1.0495882999966852, \"checks\": {\"model_completed\": false, \"accessible\": true, \"claims_present\": false, \"quotes_grounded\": false, \"vietnamese_summary\": false, \"required_facts_present\": false}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": {\"type\": \"ModelCallFailed\", \"message\": \"production_returned_after_model_failure\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H11 | source",
+          "vars": {
+            "case_id": "H11"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 20,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H11"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "71b6d1b2-7182-43de-98bb-2c543f1b144b",
+        "latencyMs": 1126,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H12",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H12\", \"group\": \"hard\", \"hard_class\": \"citation_grounding\", \"runner\": \"source\", \"passed\": false, \"required_checks\": [\"model_completed\", \"accessible\", \"claims_present\", \"quotes_grounded\", \"required_facts_present\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"claims_present\", \"quotes_grounded\", \"required_facts_present\"], \"started_at\": \"2026-09-18T08:00:07.864891+00:00\", \"finished_at\": \"2026-09-18T08:00:08.919548+00:00\", \"elapsed_seconds\": 1.054660599998897, \"checks\": {\"model_completed\": false, \"accessible\": true, \"claims_present\": false, \"quotes_grounded\": false, \"required_facts_present\": false}, \"evidence_level\": \"live_model_controlled_retrieval\", \"error\": {\"type\": \"ModelCallFailed\", \"message\": \"production_returned_after_model_failure\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H12 | source",
+          "vars": {
+            "case_id": "H12"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 21,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H12"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "8210a507-5d70-4a34-a9e1-aa309292bbf7",
+        "latencyMs": 1089,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H13",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H13\", \"group\": \"hard\", \"hard_class\": \"selective_patch\", \"runner\": \"patch\", \"passed\": false, \"required_checks\": [\"model_completed\", \"affected_exact\", \"untouched_identical\", \"line_ids_preserved\", \"removed_refs_absent\", \"script_input_unchanged\", \"replacements_grounded\", \"vietnamese_narration\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"affected_exact\", \"untouched_identical\", \"line_ids_preserved\", \"removed_refs_absent\", \"script_input_unchanged\", \"replacements_grounded\", \"vietnamese_narration\"], \"started_at\": \"2026-09-18T08:00:09.005468+00:00\", \"finished_at\": \"2026-09-18T08:00:10.036974+00:00\", \"elapsed_seconds\": 1.0315249999985099, \"checks\": {\"model_completed\": false, \"affected_exact\": false, \"untouched_identical\": false, \"line_ids_preserved\": false, \"removed_refs_absent\": false, \"script_input_unchanged\": false, \"replacements_grounded\": false, \"vietnamese_narration\": false}, \"evidence_level\": \"evaluation_error\", \"error\": {\"type\": \"ServiceError\", \"message\": \"scenario_execution_failed\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H13 | patch",
+          "vars": {
+            "case_id": "H13"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 22,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H13"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "00dd05ee-4536-49d6-8d25-f1c0e8327287",
+        "latencyMs": 2327,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H14",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H14\", \"group\": \"hard\", \"hard_class\": \"selective_patch\", \"runner\": \"patch\", \"passed\": false, \"required_checks\": [\"model_completed\", \"affected_exact\", \"untouched_identical\", \"line_ids_preserved\", \"removed_refs_absent\", \"script_input_unchanged\", \"replacements_grounded\", \"vietnamese_narration\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"replacements_grounded\"], \"started_at\": \"2026-09-18T08:00:10.120324+00:00\", \"finished_at\": \"2026-09-18T08:00:12.383420+00:00\", \"elapsed_seconds\": 2.2630957000001217, \"checks\": {\"model_completed\": false, \"affected_exact\": true, \"untouched_identical\": true, \"line_ids_preserved\": true, \"removed_refs_absent\": true, \"script_input_unchanged\": true, \"replacements_grounded\": false, \"vietnamese_narration\": true}, \"evidence_level\": \"live_model_preverified_fixture\", \"error\": {\"type\": \"ModelCallFailed\", \"message\": \"production_returned_after_model_failure\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H14 | patch",
+          "vars": {
+            "case_id": "H14"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 23,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H14"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "df15341f-05d9-4ec5-b81e-7d079b316769",
+        "latencyMs": 1117,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H15",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H15\", \"group\": \"hard\", \"hard_class\": \"teaching_style\", \"runner\": \"teaching_style\", \"passed\": false, \"required_checks\": [\"model_completed\", \"teaching_style_forwarded\", \"teaching_style_applied\", \"grounded_factual_lines\", \"vietnamese_narration\", \"only_approved_refs\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"teaching_style_forwarded\", \"teaching_style_applied\", \"grounded_factual_lines\", \"vietnamese_narration\", \"only_approved_refs\"], \"started_at\": \"2026-09-18T08:00:12.459620+00:00\", \"finished_at\": \"2026-09-18T08:00:13.515318+00:00\", \"elapsed_seconds\": 1.0557178999952157, \"checks\": {\"model_completed\": false, \"teaching_style_forwarded\": false, \"teaching_style_applied\": false, \"grounded_factual_lines\": false, \"vietnamese_narration\": false, \"only_approved_refs\": false}, \"evidence_level\": \"evaluation_error\", \"error\": {\"type\": \"ServiceError\", \"message\": \"scenario_execution_failed\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H15 | teaching_style",
+          "vars": {
+            "case_id": "H15"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 24,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H15"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "778f4142-b735-4f14-8d79-2447a073ff9e",
+        "latencyMs": 1108,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H16",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H16\", \"group\": \"hard\", \"hard_class\": \"teaching_style\", \"runner\": \"teaching_style\", \"passed\": false, \"required_checks\": [\"model_completed\", \"teaching_style_forwarded\", \"teaching_style_applied\", \"grounded_factual_lines\", \"vietnamese_narration\", \"only_approved_refs\"], \"missing_checks\": [], \"failed_checks\": [\"model_completed\", \"teaching_style_forwarded\", \"teaching_style_applied\", \"grounded_factual_lines\", \"vietnamese_narration\", \"only_approved_refs\"], \"started_at\": \"2026-09-18T08:00:13.603103+00:00\", \"finished_at\": \"2026-09-18T08:00:14.650624+00:00\", \"elapsed_seconds\": 1.0475193000020226, \"checks\": {\"model_completed\": false, \"teaching_style_forwarded\": false, \"teaching_style_applied\": false, \"grounded_factual_lines\": false, \"vietnamese_narration\": false, \"only_approved_refs\": false}, \"evidence_level\": \"evaluation_error\", \"error\": {\"type\": \"ServiceError\", \"message\": \"scenario_execution_failed\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H16 | teaching_style",
+          "vars": {
+            "case_id": "H16"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 25,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H16"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "1a274335-2aaf-4f09-9ab1-b9b3b6965ea7",
+        "latencyMs": 1092,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H17",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H17\", \"group\": \"hard\", \"hard_class\": \"admission_safety\", \"runner\": \"admission\", \"passed\": false, \"required_checks\": [\"decision_matches\", \"no_unsafe_allow\"], \"missing_checks\": [], \"failed_checks\": [\"decision_matches\"], \"started_at\": \"2026-09-18T08:00:14.739289+00:00\", \"finished_at\": \"2026-09-18T08:00:15.763181+00:00\", \"elapsed_seconds\": 1.0239158000040334, \"checks\": {\"decision_matches\": false, \"no_unsafe_allow\": true}, \"evidence_level\": \"live_model\", \"error\": {\"type\": \"AdmissionUnavailable\", \"message\": \"Classification did not complete; this case is failed, not silently excluded.\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H17 | admission",
+          "vars": {
+            "case_id": "H17"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 26,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H17"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "3472a964-c883-4f27-810a-354c97363f19",
+        "latencyMs": 46,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H18",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H18\", \"group\": \"hard\", \"hard_class\": \"admission_safety\", \"runner\": \"admission\", \"passed\": true, \"required_checks\": [\"decision_matches\", \"no_unsafe_allow\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:15.845301+00:00\", \"finished_at\": \"2026-09-18T08:00:15.845600+00:00\", \"elapsed_seconds\": 0.00029209999775048345, \"checks\": {\"decision_matches\": true, \"no_unsafe_allow\": true}, \"evidence_level\": \"local_guard\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H18 | admission",
+          "vars": {
+            "case_id": "H18"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 27,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H18"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "35eebeb8-994f-4ae0-9368-f434b91b235d",
+        "latencyMs": 446,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H19",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H19\", \"group\": \"hard\", \"hard_class\": \"session_limits\", \"runner\": \"contract\", \"passed\": false, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [\"contract_passed\"], \"started_at\": \"2026-09-18T08:00:15.911067+00:00\", \"finished_at\": \"2026-09-18T08:00:16.299504+00:00\", \"elapsed_seconds\": 0.38843579999957, \"checks\": {\"contract_passed\": false}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "H19 | contract",
+          "vars": {
+            "case_id": "H19"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 28,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H19"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "e66adc2e-dec8-4bf3-858c-9c49ea9d8013",
+        "latencyMs": 62,
+        "namedScores": {},
+        "prompt": {
+          "raw": "H20",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"H20\", \"group\": \"hard\", \"hard_class\": \"session_limits\", \"runner\": \"contract\", \"passed\": true, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:16.385177+00:00\", \"finished_at\": \"2026-09-18T08:00:16.394554+00:00\", \"elapsed_seconds\": 0.009380400006193668, \"checks\": {\"contract_passed\": true}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "H20 | contract",
+          "vars": {
+            "case_id": "H20"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 29,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "H20"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "a05ff3a2-08cb-46e8-b744-dcf4e723a533",
+        "latencyMs": 64,
+        "namedScores": {},
+        "prompt": {
+          "raw": "R01",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"R01\", \"group\": \"rare\", \"hard_class\": null, \"runner\": \"contract\", \"passed\": true, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:16.464495+00:00\", \"finished_at\": \"2026-09-18T08:00:16.476900+00:00\", \"elapsed_seconds\": 0.012388800001644995, \"checks\": {\"contract_passed\": true}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "R01 | contract",
+          "vars": {
+            "case_id": "R01"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 30,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "R01"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "b99dcec7-e47d-42b1-9df6-c2ba6c9c5b53",
+        "latencyMs": 1067,
+        "namedScores": {},
+        "prompt": {
+          "raw": "R02",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"R02\", \"group\": \"rare\", \"hard_class\": null, \"runner\": \"patch\", \"passed\": false, \"required_checks\": [\"affected_exact\", \"untouched_identical\", \"line_ids_preserved\", \"removed_refs_absent\", \"script_input_unchanged\", \"no_patch_generation_when_empty\", \"unverified_placeholder\"], \"missing_checks\": [], \"failed_checks\": [], \"started_at\": \"2026-09-18T08:00:16.552383+00:00\", \"finished_at\": \"2026-09-18T08:00:17.559907+00:00\", \"elapsed_seconds\": 1.0075211000003037, \"checks\": {\"affected_exact\": true, \"untouched_identical\": true, \"line_ids_preserved\": true, \"removed_refs_absent\": true, \"script_input_unchanged\": true, \"no_patch_generation_when_empty\": true, \"unverified_placeholder\": true}, \"evidence_level\": \"live_model_preverified_fixture\", \"error\": {\"type\": \"ModelCallFailed\", \"message\": \"production_returned_after_model_failure\"}}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "R02 | patch",
+          "vars": {
+            "case_id": "R02"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 31,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "R02"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "09794946-bdad-45ed-920e-be342bd7963a",
+        "latencyMs": 609,
+        "namedScores": {},
+        "prompt": {
+          "raw": "R03",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"R03\", \"group\": \"rare\", \"hard_class\": null, \"runner\": \"contract\", \"passed\": false, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [\"contract_passed\"], \"started_at\": \"2026-09-18T08:00:17.636588+00:00\", \"finished_at\": \"2026-09-18T08:00:18.191651+00:00\", \"elapsed_seconds\": 0.5550609999991138, \"checks\": {\"contract_passed\": false}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "R03 | contract",
+          "vars": {
+            "case_id": "R03"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 32,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "R03"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Custom function returned false\nJSON.parse(output).passed === true",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\nJSON.parse(output).passed === true",
+              "assertion": {
+                "type": "javascript",
+                "value": "JSON.parse(output).passed === true"
+              }
+            }
+          ]
+        },
+        "id": "25c61730-0dd4-4c9d-960c-020c48955cfb",
+        "latencyMs": 77,
+        "namedScores": {},
+        "prompt": {
+          "raw": "R04",
+          "label": "{{case_id}}",
+          "config": {}
+        },
+        "promptId": "42791279c62a4bc80745d7111168178c733230742072998060d06b217ae95244",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://provider.py",
+          "label": "scriptscout-production-gemini"
+        },
+        "response": {
+          "output": "{\"case_id\": \"R04\", \"group\": \"rare\", \"hard_class\": null, \"runner\": \"contract\", \"passed\": false, \"required_checks\": [\"contract_passed\"], \"missing_checks\": [], \"failed_checks\": [\"contract_passed\"], \"started_at\": \"2026-09-18T08:00:18.261822+00:00\", \"finished_at\": \"2026-09-18T08:00:18.289521+00:00\", \"elapsed_seconds\": 0.027701500002876855, \"checks\": {\"contract_passed\": false}, \"evidence_level\": \"mocked_contract\", \"error\": null}",
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "R04 | contract",
+          "vars": {
+            "case_id": "R04"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "JSON.parse(output).passed === true"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 33,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "case_id": "R04"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      }
+    ],
+    "stats": {
+      "successes": 20,
+      "failures": 14,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 34,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "durationMs": 54150,
+      "evaluationDurationMs": 54150
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "ScriptScout Golden 34 v1 - registered mixed evaluation",
+    "prompts": [
+      "{{case_id}}"
+    ],
+    "providers": [
+      {
+        "id": "file://provider.py",
+        "label": "scriptscout-production-gemini"
+      }
+    ],
+    "tests": [
+      {
+        "description": "O01 | admission",
+        "vars": {
+          "case_id": "O01"
+        }
+      },
+      {
+        "description": "O02 | admission",
+        "vars": {
+          "case_id": "O02"
+        }
+      },
+      {
+        "description": "O03 | admission",
+        "vars": {
+          "case_id": "O03"
+        }
+      },
+      {
+        "description": "O04 | admission",
+        "vars": {
+          "case_id": "O04"
+        }
+      },
+      {
+        "description": "O05 | source",
+        "vars": {
+          "case_id": "O05"
+        }
+      },
+      {
+        "description": "O06 | source",
+        "vars": {
+          "case_id": "O06"
+        }
+      },
+      {
+        "description": "O07 | source",
+        "vars": {
+          "case_id": "O07"
+        }
+      },
+      {
+        "description": "O08 | source",
+        "vars": {
+          "case_id": "O08"
+        }
+      },
+      {
+        "description": "O09 | teaching_style",
+        "vars": {
+          "case_id": "O09"
+        }
+      },
+      {
+        "description": "O10 | contract",
+        "vars": {
+          "case_id": "O10"
+        }
+      },
+      {
+        "description": "H01 | source",
+        "vars": {
+          "case_id": "H01"
+        }
+      },
+      {
+        "description": "H02 | source",
+        "vars": {
+          "case_id": "H02"
+        }
+      },
+      {
+        "description": "H03 | conflict",
+        "vars": {
+          "case_id": "H03"
+        }
+      },
+      {
+        "description": "H04 | conflict",
+        "vars": {
+          "case_id": "H04"
+        }
+      },
+      {
+        "description": "H05 | source",
+        "vars": {
+          "case_id": "H05"
+        }
+      },
+      {
+        "description": "H06 | source",
+        "vars": {
+          "case_id": "H06"
+        }
+      },
+      {
+        "description": "H07 | source",
+        "vars": {
+          "case_id": "H07"
+        }
+      },
+      {
+        "description": "H08 | source",
+        "vars": {
+          "case_id": "H08"
+        }
+      },
+      {
+        "description": "H09 | source",
+        "vars": {
+          "case_id": "H09"
+        }
+      },
+      {
+        "description": "H10 | source",
+        "vars": {
+          "case_id": "H10"
+        }
+      },
+      {
+        "description": "H11 | source",
+        "vars": {
+          "case_id": "H11"
+        }
+      },
+      {
+        "description": "H12 | source",
+        "vars": {
+          "case_id": "H12"
+        }
+      },
+      {
+        "description": "H13 | patch",
+        "vars": {
+          "case_id": "H13"
+        }
+      },
+      {
+        "description": "H14 | patch",
+        "vars": {
+          "case_id": "H14"
+        }
+      },
+      {
+        "description": "H15 | teaching_style",
+        "vars": {
+          "case_id": "H15"
+        }
+      },
+      {
+        "description": "H16 | teaching_style",
+        "vars": {
+          "case_id": "H16"
+        }
+      },
+      {
+        "description": "H17 | admission",
+        "vars": {
+          "case_id": "H17"
+        }
+      },
+      {
+        "description": "H18 | admission",
+        "vars": {
+          "case_id": "H18"
+        }
+      },
+      {
+        "description": "H19 | contract",
+        "vars": {
+          "case_id": "H19"
+        }
+      },
+      {
+        "description": "H20 | contract",
+        "vars": {
+          "case_id": "H20"
+        }
+      },
+      {
+        "description": "R01 | contract",
+        "vars": {
+          "case_id": "R01"
+        }
+      },
+      {
+        "description": "R02 | patch",
+        "vars": {
+          "case_id": "R02"
+        }
+      },
+      {
+        "description": "R03 | contract",
+        "vars": {
+          "case_id": "R03"
+        }
+      },
+      {
+        "description": "R04 | contract",
+        "vars": {
+          "case_id": "R04"
+        }
+      }
+    ],
+    "env": {},
+    "sharing": false,
+    "defaultTest": {
+      "assert": [
+        {
+          "type": "javascript",
+          "value": "JSON.parse(output).passed === true"
+        }
+      ],
+      "vars": {},
+      "options": {},
+      "metadata": {}
+    },
+    "outputPath": [
+      "F:\\Personal_Project\\scriptscout\\eval\\runs\\20260918T075920Z-c5072b\\promptfoo.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {
+      "maxConcurrency": 1,
+      "cache": false,
+      "repeat": 1
+    }
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.123.1",
+    "nodeVersion": "v24.19.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-09-18T08:00:18.681Z",
+    "evaluationCreatedAt": "2026-09-18T07:59:24.178Z"
+  },
+  "vars": [
+    "case_id"
+  ],
+  "runtimeOptions": {
+    "eventSource": "cli",
+    "maxConcurrency": 1,
+    "cache": false,
+    "repeat": 1,
+    "showProgressBar": false
+  }
+}

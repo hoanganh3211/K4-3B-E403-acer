@@ -1,0 +1,39 @@
+{
+  "case_id": "R04",
+  "group": "rare",
+  "hard_class": null,
+  "runner": "contract",
+  "passed": false,
+  "required_checks": [
+    "contract_passed"
+  ],
+  "missing_checks": [],
+  "failed_checks": [
+    "contract_passed"
+  ],
+  "observed": {
+    "checks": {
+      "contract_passed": false
+    },
+    "details": {
+      "test": "tests.test_session_actions.SessionActionTests.test_scanned_pdf_is_retained_but_never_becomes_evidence",
+      "tests_run": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "raw_test_output": "test_scanned_pdf_is_retained_but_never_becomes_evidence (tests.test_session_actions.SessionActionTests.test_scanned_pdf_is_retained_but_never_becomes_evidence) ... FAIL\n\n======================================================================\nFAIL: test_scanned_pdf_is_retained_but_never_becomes_evidence (tests.test_session_actions.SessionActionTests.test_scanned_pdf_is_retained_but_never_becomes_evidence)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"F:\\Personal_Project\\scriptscout\\tests\\test_session_actions.py\", line 79, in setUp\n    self.client = stack.enter_context(TestClient(api.app))\n                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextlib.py\", line 530, in enter_context\n    result = _enter(cm)\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\starlette\\testclient.py\", line 681, in __enter__\n    self.portal = portal = stack.enter_context(anyio.from_thread.start_blocking_portal(**self.async_backend))\n                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextlib.py\", line 530, in enter_context\n    result = _enter(cm)\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextlib.py\", line 141, in __enter__\n    return next(self.gen)\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\anyio\\from_thread.py\", line 554, in start_blocking_portal\n    portal = future.result()\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\_base.py\", line 460, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\_base.py\", line 402, in __get_result\n    raise self._exception\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\anyio\\from_thread.py\", line 538, in run_blocking_portal\n    run_eventloop(\n    ~~~~~~~~~~~~~^\n        run_portal, backend=backend, backend_options=backend_options\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\anyio\\_core\\_eventloop.py\", line 83, in run\n    return async_backend.run(func, args, {}, backend_options)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\Personal_Project\\scriptscout\\venv\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 2547, in run\n    with Runner(debug=debug, loop_factory=loop_factory) as runner:\n         ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 59, in __enter__\n    self._lazy_init()\n    ~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 138, in _lazy_init\n    self._loop = events.new_event_loop()\n                 ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py\", line 840, in new_event_loop\n    return get_event_loop_policy().new_event_loop()\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py\", line 737, in new_event_loop\n    return self._loop_factory()\n           ~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_events.py\", line 316, in __init__\n    super().__init__(proactor)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py\", line 635, in __init__\n    self._make_self_pipe()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py\", line 781, in _make_self_pipe\n    self._ssock, self._csock = socket.socketpair()\n                               ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socket.py\", line 623, in _fallback_socketpair\n    csock.connect((addr, port))\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1169, in __call__\n    return self._mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1173, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DAT PHAN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1234, in _execute_mock_call\n    raise effect\nAssertionError: Contract evaluation must not access a real network\n\n----------------------------------------------------------------------\nRan 1 test in 0.027s\n\nFAILED (failures=1)\n",
+      "limitation": "Existing mocked regression test; measures software contracts, not model judgment or live provider quality",
+      "as_of_date": "2026-09-18",
+      "missing_expected_checks": [],
+      "execution_mode": "live",
+      "live_web_search": false,
+      "provider_request_definition": "Logical Gemini SDK generate_content calls; retry attempts configured to one"
+    },
+    "evidence_level": "mocked_contract",
+    "provider_call_count": 0,
+    "raw_calls": []
+  },
+  "started_at": "2026-09-18T08:00:18.261822+00:00",
+  "finished_at": "2026-09-18T08:00:18.289521+00:00",
+  "elapsed_seconds": 0.027701500002876855
+}

@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-09-18T08:01:16.608322+00:00",
+  "finished_at": "2026-09-18T08:02:01.566614+00:00",
+  "tests_run": 213,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 213,
+  "successful": true,
+  "network_counters": {
+    "loopback_connections": 207,
+    "external_connections_refused": 0
+  },
+  "scope": "Post-freeze offline diagnostic, not a replacement golden result",
+  "reason": "Registered all-socket guard prevents Windows asyncio socketpair from starting TestClient/Streamlit tests",
+  "baseline_golden": "20260918T075920Z-c5072b",
+  "baseline_regression": "20260918T075921Z-a1ed8a",
+  "freeze_sha256": "1dbbc3a3d7353df3e10cd25a3de503e3449b8d4656b8c1a68f382d5e104f8f39",
+  "diagnostic_code_sha256": "131ea81fecae55e43732fd9d001bf25afbb77ba4bb99afab6e1db4b82233b95b",
+  "log_sha256": "8eac961a04f3a10cf0043e2a0a026f980e007d7458b79e62d8cd101713279782"
+}

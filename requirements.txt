@@ -1,0 +1,15 @@
+# Core runtime: local API + UI + real search/model adapters.
+openai>=1.50,<3
+google-genai>=1.0,<3
+httpx>=0.27,<1
+beautifulsoup4>=4.12,<5
+pypdf>=5,<7
+fonttools>=4.50,<5
+pydantic>=2.9,<3
+pydantic-settings>=2.5,<3
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+streamlit>=1.64,<2
+requests>=2.32,<3
+python-dotenv>=1.0,<2
+python-multipart>=0.0.9,<1
