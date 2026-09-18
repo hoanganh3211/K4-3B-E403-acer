@@ -112,3 +112,7 @@ Nguyễn Hữu Chương, Võ Trường An.
 
 ## §9. Changelog
 | Thời điểm | Đổi gì | Vì sao (trỏ về feedback/case nào) |
+| :--- | :--- | :--- |
+| Sau validation CP5 | Thêm nút "Select All / Deselect All" ở màn hình duyệt danh sách nguồn. | Feedback từ Nguyễn Hữu Chương (Willing User): Lười đọc tóm tắt từng nguồn, muốn có nút chọn nhanh tất cả. |
+| Sau validation CP5 | Cho phép người dùng chỉnh sửa nội dung văn bản kịch bản sau khi AI sinh ra. | Feedback từ Võ Trường An (Willing User): Bức xúc vì không bôi đen sửa được nội dung kịch bản. |
+| Sau validation CP5 | Chưa bổ sung thanh công cụ lọc nguồn (Filter theo: bài báo, học thuật .edu, blog). | Feedback từ Phạm Đình Duy (Willing User): Mất thời gian do phải tự dò bằng mắt và xóa tay các link từ blog cá nhân. |
